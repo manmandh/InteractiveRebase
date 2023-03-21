@@ -1,0 +1,7 @@
+Merge diff is a concept in version control systems such as Git, used to resolve conflicts when merging branches in a repository.
+
+When merging branches, there may be situations where changes on two branches are incompatible with each other, known as conflicts. Merge diff is used to resolve these conflicts.
+
+When using merge diff, the system displays all the changes on the branches that need to be merged, along with conflict notifications if any. You can choose individual changes to resolve conflicts or use automated tools to resolve them automatically. After all conflicts are resolved, the system creates a new commit containing all the changes that have been merged from the branches.
+
+However, resolving conflicts in merge diff can be challenging, especially when multiple changes occur on the same file or when changes are made on different code lines. Therefore, if not done correctly, merge diff can cause issues and lose important information during the process of merging branches.
