@@ -46,15 +46,15 @@ public class MultiThreadingArrange {
     private static List<Thread> startSortingThreads(List<List<Integer>> SubLists) {
         List<Thread> threads = new ArrayList<>();
         for (List<Integer> sublist : SubLists) {
-            Thread t = new Thread(() -> Collections.sort(sublist));
-            threads.add(t);
-            t.start();
+            Thread th = new Thread(() -> Collections.sort(sublist));
+            threads.add(th);
+            th.start();
         }
         return threads;
     }
     private static void joinThreads(List<Thread> threads) throws InterruptedException {
-        for (Thread t : threads) {
-            t.join();
+        for (Thread th : threads) {
+            th.join();
         }
     }
     private static List<Integer> mergeSortedLists(List<List<Integer>> SubLists) {

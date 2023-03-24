@@ -1,3 +1,4 @@
+package ExThreadAndRunnable;
 public class Main {
     public static void main(String[] args) {
         // Tạo một đối tượng của lớp con trên và gọi phương thức start() để bắt đầu thread
